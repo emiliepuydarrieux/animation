@@ -12,8 +12,8 @@ public class ExempleDUtilisation {
     }
 
     public void exemple() {
-        Bandeau bandeau1 = new Bandeau();
-        Bandeau bandeau2 = new Bandeau();
+       /* Bandeau bandeau1 = new Bandeau();
+         Bandeau bandeau2 = new Bandeau();
 
         Font font = bandeau1.getFont();
         Color back = bandeau1.getBackground();
@@ -60,6 +60,9 @@ public class ExempleDUtilisation {
         bandeau1.setMessage("Terminé");
         bandeau1.sleep(3000);
         bandeau1.close();
-        bandeau2.close();
+        bandeau2.close();*/
+
+        Rotation clignotant=new Rotation();
+        clignotant.Tourner("Bonjour", 3, Math.PI/3);
     }
 }
