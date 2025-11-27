@@ -63,6 +63,7 @@ public class ExempleDUtilisation {
         bandeau2.close();*/
 
         Scenario scenario1= new Scenario();
-        scenario1.scenario1("Hello", "World", 4, 500, " Hello World", 6, Math.PI/3);
+        Bandeau bandeau1 = new Bandeau();
+        scenario1.scenario1(bandeau1, "Hello", "World", 4, 500, " Hello World", 6, Math.PI/3);
     }
 }

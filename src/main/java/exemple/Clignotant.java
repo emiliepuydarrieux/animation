@@ -4,6 +4,6 @@ import bandeau.Bandeau;
 
 public interface Clignotant {
 
-    public void clignoter(String message, int nombre, int temps);
+    public void clignoter(Bandeau bandeau,String message, int nombre, int temps);
     
 }

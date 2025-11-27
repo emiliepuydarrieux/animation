@@ -7,34 +7,31 @@ public EffetAnimation(){
 
 }
 
-public void carParCaractere(String message){
-        Bandeau bandeau3=new Bandeau();
-        bandeau3.setMessage("");
+public void carParCaractere(Bandeau bandeau, String message){
+        bandeau.setMessage("");
         for (int i=0; i< message.length();i++){
-            bandeau3.setMessage(bandeau3.getMessage()+Character.toString(message.charAt(i)));
-            bandeau3.sleep(500);
+            bandeau.setMessage(bandeau.getMessage()+Character.toString(message.charAt(i)));
+            bandeau.sleep(500);
 
         }
 }
 
-public void clignoter(String message, int nombre, int temps){
-        Bandeau bandeau3=new Bandeau();
-        bandeau3.setMessage("");
+public void clignoter(Bandeau bandeau, String message, int nombre, int temps){
+        bandeau.setMessage("");
         for (int i=0; i<nombre;i++){
-            bandeau3.setMessage(message);
-            bandeau3.sleep(temps);
-            bandeau3.setMessage("");
-            bandeau3.sleep(temps);
+            bandeau.setMessage(message);
+            bandeau.sleep(temps);
+            bandeau.setMessage("");
+            bandeau.sleep(temps);
         }
     }
 
-public void tourner(String message, int nombre, double angle){
-        Bandeau bandeau3=new Bandeau();
-        bandeau3.setMessage("");
-        bandeau3.setMessage(message);
+public void tourner(Bandeau bandeau, String message, int nombre, double angle){
+        bandeau.setMessage("");
+        bandeau.setMessage(message);
         for (int i=1; i<=nombre;i++){
-            bandeau3.sleep(500);
-            bandeau3.setRotation(i*angle);
+            bandeau.sleep(500);
+            bandeau.setRotation(i*angle);
             
         }
 
