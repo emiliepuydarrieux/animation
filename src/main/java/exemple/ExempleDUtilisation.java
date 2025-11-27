@@ -62,7 +62,7 @@ public class ExempleDUtilisation {
         bandeau1.close();
         bandeau2.close();*/
 
-        Rotation clignotant=new Rotation();
-        clignotant.Tourner("Bonjour", 3, Math.PI/3);
+        Scenario scenario1= new Scenario();
+        scenario1.scenario1("Hello", "World", 4, 500, " Hello World", 6, Math.PI/3);
     }
 }
